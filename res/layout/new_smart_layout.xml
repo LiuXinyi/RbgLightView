@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tips_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度："
+            android:textColor="#606060"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="色温："
+            android:textColor="#606060"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rgb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="颜色："
+            android:textColor="#606060"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/smart_light_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/rgb_view2"
+            android:layout_alignLeft="@id/rgb_view2"
+            android:layout_alignRight="@id/rgb_view2"
+            android:layout_alignTop="@id/rgb_view2"
+            android:background="#D3D3D3" >
+
+            <LinearLayout
+                android:id="@+id/left_view2"
+                android:layout_width="0.0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="#FF5500"
+                android:gravity="bottom"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/right_view2"
+                android:layout_width="0.0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:background="#FF5500"
+                android:gravity="top"
+                android:orientation="vertical" />
+        </LinearLayout>
+        <!-- android:visibility="invisible"com.example.rgblightview.MyRgbPickerView -->
+
+        <com.example.rgblightview.MyRgbPickerView
+            android:id="@+id/rgb_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/rgb_bg" />
+
+        <ImageView
+            android:id="@+id/switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rgb_view2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-35dp"
+            android:background="#FF5500"
+            android:src="@drawable/light_btn__select" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/new_smart_light_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/light_view"
+            android:layout_alignLeft="@id/light_view"
+            android:layout_alignRight="@id/light_view"
+            android:layout_alignTop="@id/light_view"
+            android:background="#DEDEDE" >
+
+            <LinearLayout
+                android:id="@+id/left_view"
+                android:layout_width="0.0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="bottom"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/right_view"
+                android:layout_width="0.0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="top"
+                android:orientation="vertical" />
+        </LinearLayout>
+        <!-- com.example.rgblightview.LightView -->
+
+        <com.example.rgblightview.LightView
+            android:id="@+id/light_view"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:maxHeight="320dp"
+            android:maxWidth="320dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/light_image" />
+
+        <!-- com.example.rgblightview.RgbView -->
+
+        <com.example.rgblightview.RgbView
+            android:id="@+id/rgb_view"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/light_view"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/rgb_image" />
+    </RelativeLayout>
+
+</LinearLayout>

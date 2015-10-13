@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="selected_view" type="id"/>
+    <item name="toast_layout" type="id"/>
+    <item name="login_tips" type="id"/>
+    <item name="rgb_view" type="id"/>
+    <item name="edit_user" type="id"/>
+    <item name="edit_password" type="id"/>
+    <item name="title_notice" type="id"/>
+    <item name="title_text" type="id"/>
+    <item name="title_layout" type="id"/>
+    <item name="tips_text" type="id"/>
+    <item name="device_image" type="id"/>
+    <item name="title_back" type="id"/>
+    <item name="title_done" type="id"/>
+    <item name="image_arrow" type="id"/>
+    <item name="setting_text" type="id"/>
+    <item name="device_manage_left" type="id"/>
+    <item name="device_manage_top_text" type="id"/>
+    <item name="device_manage_below_text" type="id"/>
+    <item name="device_manage_right_layout" type="id"/>
+    <item name="light_view" type="id"/>
+    <item name="rgb_view2" type="id"/>
+
+</resources>

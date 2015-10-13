@@ -18,7 +18,7 @@ import android.widget.ImageView;
 /**
  * @author LiuXinYi
  * @Date 2015年9月17日 上午10:00:15
- * @Description []
+ * @Description [正方形颜色选择界面]
  * @version 1.0.0
  */
 public class RgbView extends ImageView {

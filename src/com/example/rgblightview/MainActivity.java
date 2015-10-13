@@ -2,7 +2,6 @@ package com.example.rgblightview;
 
 import com.example.rgblightview.LightView.OnLightListener;
 import com.example.rgblightview.RgbView.OnColorChangedListener;
-
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -10,7 +9,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.Window;
 import android.view.ViewGroup.LayoutParams;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -18,11 +16,18 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
+    // 背景，控制滑动条颜色
     private View left_view, right_view, left_view2, right_view2;
+
+    // 新版灯控界面
     private LightView lightView;
+    // 新版取色界面
     private RgbView rgb_view;
+
     private TextView rgb_text, temp_text, light_text;
+    // 旧版灯控界面
     private MyRgbPickerView rgbPickerView;
+    // 两个layout
     private View smart_light_layout, new_smart_light_layout;
 
     @Override
@@ -230,7 +235,7 @@ public class MainActivity extends Activity {
 	int g = Color.green(pixel);
 	int b = Color.blue(pixel);
 	switch_btn.setImageResource(R.drawable.light_btn__select);
-	if (r > 198 && g > 198 && b > 198) {//如果颜色为高亮
+	if (r > 198 && g > 198 && b > 198) {// 如果颜色为高亮
 	    switch_btn.setSelected(true);
 	} else {
 	    switch_btn.setSelected(false);

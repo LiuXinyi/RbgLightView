@@ -17,7 +17,7 @@ import android.widget.ScrollView;
 /**
  * @author LiuXinYi
  * @Date 2015�?�?6�?下午2:52:34
- * @Description []
+ * @Description [新版灯控界面]
  * @version 1.0.0
  */
 public class LightView extends ImageView {
